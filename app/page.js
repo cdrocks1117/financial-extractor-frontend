@@ -23,6 +23,7 @@ export default function Home() {
 
     try {
       // FIXED: Added /upload endpoint
+      console.log("Posting to URL:", "https://financial-extractor-backend-1.onrender.com/upload");
       const response = await fetch("https://financial-extractor-backend-1.onrender.com/upload", {
         method: "POST",
         body: formData,
