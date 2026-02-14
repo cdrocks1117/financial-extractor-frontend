@@ -20,7 +20,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://localhost:8000/upload", {
+      const response = await fetch("https://financial-extractor-backend-1.onrender.com", {
         method: "POST",
         body: formData,
       });
